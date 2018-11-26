@@ -1,8 +1,29 @@
 <?php
 
 /**
-* DO NOT CHANGE
-*/
+ *
+ * Auto Groups. An extension for the phpBB Forum Software package.
+ * Chinese translation by Yangzw
+ *
+ * @copyright (c) 2018 phpBB Limited <https://www.phpbb.com>
+ * @license GNU General Public License, version 2 (GPL-2.0-only)
+ *
+ */
+
+/**
+ * DO NOT CHANGE
+ */
+if (!defined('IN_PHPBB'))
+{
+	exit;
+}
+if (empty($lang) || !is_array($lang))
+{
+	$lang = array();
+}
+
+// 编码格式：UTF-8
+
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -12,6 +33,8 @@ if (empty($lang) || !is_array($lang))
 {
 	$lang = array();
 }
+
+//Front的部分phpbb中国社区已经翻译了，如果你安装了中文支持包
 
 $lang = array_merge($lang, array(
 	// Front
@@ -75,5 +98,5 @@ $lang = array_merge($lang, array(
 	'RCE_TXTA_TITLE'		=>	'的文本区域颜色',
 	'RCE_TXTA_DESC'			=>	'如果要将文本区域颜色更改为黑色，请选择是。',
 	'RCE_BUT_TITLE'			=>	'自定义的BBCode放置图标的位置',
-	'RCE_BUT_DESC'			=>	'root/ext/rin/editor/styles/all/template/js/icons<br />(Dimension: 16x16 px, File name: Exactly same of bbcode name, File extension: png.)',
+	'RCE_BUT_DESC'			=>	'root/ext/rin/editor/styles/all/template/js/icons<br />(长宽： 16x16 px, 图标名字: 必须与对应的BBCode一致, 文件后缀: png)',
 ));
